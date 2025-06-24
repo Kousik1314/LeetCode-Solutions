@@ -14,8 +14,8 @@ public:
         while(fast!=NULL && fast->next!=NULL){
             slow=slow->next;
             fast=fast->next->next;
-            if(slow==fast) return true;
+            if(slow==fast) return true; //cycle exists
         }
-        return false;
+        return false; //cycle not exist
     }
 };
